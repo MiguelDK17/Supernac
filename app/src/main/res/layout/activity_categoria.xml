@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FF8900"
+    android:fillViewport="true"
+    tools:context=".Categoria">
+    <LinearLayout
+        android:id="@+id/Linearcat"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <include
+            layout="@layout/toolbar_carrinho"
+            android:id="@+id/toolbar"/>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/crd_informatica"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginTop="20dp"
+            app:cardCornerRadius="15dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#1065C0"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/tvInformatica"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Informática"
+                    android:textColor="#fff"
+                    android:textSize="30dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvInformatica"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="3dp"
+                    android:textColor="#fff" />
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentRight="true"
+                    android:maxHeight="100dp"
+                    android:src="@drawable/inform_tica" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/crdEletronicos"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            app:cardCornerRadius="15dp"
+            android:layout_marginTop="20dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#1065C0"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/Eletronicos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Eletrônicos"
+                    android:textColor="#fff"
+                    android:textSize="30dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/Eletronicos"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="3dp"
+                    android:textColor="#fff" />
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentRight="true"
+                    android:maxHeight="100dp"
+                    android:src="@drawable/eletr_nica" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/crdAlimentos"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            app:cardCornerRadius="15dp"
+            android:layout_marginTop="20dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#1065C0"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/Alimentos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Alimentos"
+                    android:textColor="#fff"
+                    android:textSize="30dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/Alimentos"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="3dp"
+                    android:textColor="#fff" />
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentRight="true"
+                    android:maxHeight="100dp"
+                    android:src="@drawable/a_ougue" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/crdCasa"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            app:cardCornerRadius="15dp"
+            android:layout_marginTop="20dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#1065C0"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/Casa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Casa"
+                    android:textColor="#fff"
+                    android:textSize="30dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/Casa"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="3dp"
+                    android:textColor="#fff" />
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentRight="true"
+                    android:maxHeight="100dp"
+                    android:src="@drawable/casa" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/crdJogos"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            app:cardCornerRadius="15dp"
+            android:layout_marginTop="20dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#1065C0"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/Jogos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Jogos"
+                    android:textColor="#fff"
+                    android:textSize="30dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/Jogos"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="3dp"
+                    android:textColor="#fff" />
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentRight="true"
+                    android:maxHeight="100dp"
+                    android:src="@drawable/jogos" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/crdBebidas"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            app:cardCornerRadius="15dp"
+            android:layout_marginTop="20dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#1065C0"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/Bebidas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Bebidas"
+                    android:textColor="#fff"
+                    android:textSize="30dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/Bebidas"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="3dp"
+                    android:textColor="#fff" />
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentRight="true"
+                    android:maxHeight="100dp"
+                    android:src="@drawable/bebidas" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/crdHortifruti"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            app:cardCornerRadius="15dp"
+            android:layout_marginTop="20dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#1065C0"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/Hortifruti"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Hortifruti"
+                    android:textColor="#fff"
+                    android:textSize="30dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/Hortifruti"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="3dp"
+                    android:textColor="#fff" />
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentRight="true"
+                    android:maxHeight="100dp"
+                    android:src="@drawable/hortifruti" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/crdPadaria"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            app:cardCornerRadius="15dp"
+            android:layout_marginTop="20dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#1065C0"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/Padaria"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Padaria"
+                    android:textColor="#fff"
+                    android:textSize="30dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/Padaria"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="3dp"
+                    android:textColor="#fff" />
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentRight="true"
+                    android:maxHeight="100dp"
+                    android:src="@drawable/padaria" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/bt_carrinho"
+            android:layout_width="137dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#9B111E"
+            android:layout_gravity="center"
+            android:text="Ir para o carrinho"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.54"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+
+
+
+    </LinearLayout>
+</ScrollView>

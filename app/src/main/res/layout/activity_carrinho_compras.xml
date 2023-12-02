@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:orientation="vertical"
+    tools:context=".Carrinho_Compras">
+    <include
+        layout="@layout/toolbar_carrinho"
+        android:id="@+id/toolbar_carrinho"/>
+
+    <Button
+        android:id="@+id/bt_confirmar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/recyclerview_carrinho"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/verde"
+        android:text="Confirmar Compra"
+        android:visibility="gone"
+        android:textColor="@color/white" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_below="@id/toolbar_carrinho"
+        android:id="@+id/recyclerview_carrinho"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ainda não há nenhum produto no carrinho"
+        android:layout_centerInParent="true"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:visibility="gone"
+        android:id="@+id/tvErro"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.migueldev.supernac"
+    android:versionName="Let It Be...Naked">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Supernac"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"
+        android:usesCleartextTraffic="true"
+        tools:replace="android:label"
+        tools:ignore="UnusedAttribute">
+        <activity android:name=".Jogos"
+            android:exported="false"/>
+        <activity android:name=".Informatica"
+            android:exported="false"/>
+        <activity android:name=".Padaria"
+            android:exported="false"/>
+        <activity android:name=".Hortifruti"
+            android:exported="true"/>
+        <activity android:name=".Bebidas"
+            android:exported="false"/>
+       <activity
+            android:name=".Criar_Conta"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity android:name=".Casa"
+            android:exported="false"/>
+        <activity
+            android:name=".Twitter"
+            android:exported="false" />
+        <activity
+            android:name=".Facebook"
+            android:exported="false" />
+        <activity
+            android:name=".Perfil"
+            android:exported="false" />
+        <activity
+            android:name=".Eletronicos"
+            android:exported="false" />
+        <activity
+            android:name=".Vendas_Online"
+            android:exported="false" />
+        <activity
+            android:name=".Alimentos"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"
+            android:exported="false" />
+        <activity
+            android:name=".Categoria"
+            android:exported="false" />
+        <activity
+            android:name=".Carrinho_Compras"
+            android:exported="false" />
+        <activity
+            android:name=".Principal"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

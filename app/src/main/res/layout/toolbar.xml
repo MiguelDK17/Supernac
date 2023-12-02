@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    app:title="@string/app_name"
+    app:titleTextColor="@color/azul_escuro_supernac"
+    android:id="@+id/toolbar">
+
+    <ImageButton
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/baseline_nottificacao_24"
+        android:layout_gravity="end|center_vertical"
+        android:layout_marginEnd="30dp"/>
+
+</androidx.appcompat.widget.Toolbar>
