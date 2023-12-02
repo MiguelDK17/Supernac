@@ -27,6 +27,7 @@ class Alimentos() : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityAlimentosBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
         alimentos()
         binding.swipeAlimentos.setOnRefreshListener {
             alimentos()
